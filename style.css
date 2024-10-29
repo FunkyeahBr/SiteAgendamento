@@ -8,8 +8,8 @@ Cinza claro (para detalhes): #F0F4F8
 Azul escuro (para botões): #005082 */
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -24,51 +24,52 @@ body {
 header {
     background-color: #005082;
     color: white;
-    padding: 1px;
-
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
 
+/* Título do cabeçalho */
 header > h1 { 
-    border: 1px dotted rgb(255, 255, 255);
-    text-align: center;
-    padding: 1px;
-    margin-left: 10px;
+    
+    margin: 0;
 }
 
+/* Contêiner do menu */
 header > nav {
-    
-    border: 1px dotted black;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-}
-
-header > nav > a { 
-    color: #F0F4F8;
-    background-color: #0182add8;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    text-decoration: none;
     text-align: center;
+    align-items: center;
     
-    
+    justify-content: flex-end;
+    padding: 3px;
+    margin: 3px;
 }
 
-header > nav > a:hover { 
-    background-color: #F0F4F8;
-    color: black;
-    transition: background-color .5s;
+/* Links do menu */
+header > nav > a {
+    color: #F0F4F8;
+    background-color: #005082; /* Igual ao fundo do header */
+    padding: 10px 100px;
+    
+    flex: 1; /* Cada link ocupa a mesma largura */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.5s;
 }
 
+/* Efeito de hover */
+header > nav > a:hover {
+    background-color: #003E63;
+    color: white;
+}
+
+/* Estilos para o main */
 main {
-background-color: #F0F4F8;
-margin: 10px;
-padding: 10px;
-border-radius: 10px;
-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.418);
+    background-color: #F0F4F8;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.418);
 }
